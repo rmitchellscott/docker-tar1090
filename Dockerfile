@@ -57,7 +57,7 @@ RUN set -x && \
     echo "tar1090-db ${VERSION_TAR1090_DB}" >> /VERSIONS && \
     popd && \
     # tar1090: clone
-    git clone --single-branch --depth 1 "https://github.com/wiedehopf/tar1090.git" "${GITPATH_TAR1090}" && \
+    git clone --single-branch --depth 1 "https://github.com/rmitchellscott/tar1090.git" "${GITPATH_TAR1090}" && \
     pushd "${GITPATH_TAR1090}" && \
     VERSION_TAR1090=$(git log | head -1 | tr -s " " "_") && \
     echo "tar1090 ${VERSION_TAR1090}" >> /VERSIONS && \
